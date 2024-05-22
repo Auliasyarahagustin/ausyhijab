@@ -3,105 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usaha Hijab</title>
+    <title>Hijab Store Landing Page</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e0f7fa; /* Pastel biru */
+        }
+        .navbar, .footer {
+            background-color: #b2ebf2; /* Warna pastel biru lebih gelap */
+        }
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?hijab') no-repeat center center;
+            background-size: cover;
+            color: white;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+        .hero p {
+            font-size: 1.5rem;
+        }
+        .content {
+            padding: 4rem 0;
+        }
+        .content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        .footer {
+            padding: 2rem 0;
+            color: white;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Usaha Hijab</a>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Hijab Store</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">Tentang Kami</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#products">Produk</a>
+                    <a class="nav-link" href="#">Products</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Kontak</a>
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <!-- Header -->
-    <header class="header text-center text-light d-flex align-items-center justify-content-center">
-        <div class="overlay"></div>
-        <div class="content">
-            <h1 class="display-4">Selamat Datang di Usaha Hijab</h1>
-            <p class="lead">Koleksi Hijab Terbaik dengan Warna Pastel</p>
-        </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="py-5 text-center">
+    <!-- Hero Section -->
+    <div class="hero">
         <div class="container">
-            <h2 class="mb-4">Tentang Kami</h2>
-            <p>Usaha Hijab adalah toko online yang menyediakan berbagai macam hijab dengan kualitas terbaik dan desain terbaru. Kami berkomitmen untuk memberikan pelayanan terbaik dan produk yang memuaskan pelanggan.</p>
+            <h1>Welcome to Hijab Store</h1>
+            <p>Your one-stop shop for stylish and comfortable hijabs</p>
+            <a href="#" class="btn btn-primary btn-lg">Shop Now</a>
         </div>
-    </section>
+    </div>
 
-    <!-- Products Section -->
-    <section id="products" class="py-5 bg-light text-center">
-        <div class="container">
-            <h2 class="mb-4">Produk Kami</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Produk 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Produk 1</h5>
-                            <p class="card-text">Deskripsi singkat produk 1.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Produk 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Produk 2</h5>
-                            <p class="card-text">Deskripsi singkat produk 2.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Produk 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Produk 3</h5>
-                            <p class="card-text">Deskripsi singkat produk 3.</p>
-                        </div>
-                    </div>
-                </div>
+    <!-- Content Section -->
+    <div class="container content">
+        <h2>Our Collections</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://source.unsplash.com/400x400/?hijab,1" class="img-fluid" alt="Hijab Collection 1">
+                <h3>Modern Hijabs</h3>
+                <p>Discover our latest collection of modern hijabs.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="https://source.unsplash.com/400x400/?hijab,2" class="img-fluid" alt="Hijab Collection 2">
+                <h3>Elegant Hijabs</h3>
+                <p>Elegant hijabs for special occasions.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="https://source.unsplash.com/400x400/?hijab,3" class="img-fluid" alt="Hijab Collection 3">
+                <h3>Casual Hijabs</h3>
+                <p>Comfortable and casual hijabs for everyday wear.</p>
             </div>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5 text-center">
-        <div class="container">
-            <h2 class="mb-4">Kontak Kami</h2>
-            <p>Hubungi kami untuk informasi lebih lanjut tentang produk dan layanan kami.</p>
-            <p>Email: info@usahahijab.com</p>
-            <p>Telepon: +62 123 456 789</p>
-        </div>
-    </section>
+    </div>
 
     <!-- Footer -->
-    <footer class="py-4 bg-light text-center">
+    <div class="footer">
         <div class="container">
-            <p class="m-0">&copy; 2024 Usaha Hijab. All rights reserved.</p>
+            <p>&copy; 2024 Hijab Store. All rights reserved.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="#">Terms of Service</a></li>
+            </ul>
         </div>
-    </footer>
+    </div>
 
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
